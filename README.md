@@ -112,3 +112,7 @@ $)docker rm -f $(docker ps -aq)
 $)cd ~/github/hyperledger-study01/network/multi
 $)./0-network-start.sh
 ```
+* 채널 생성 및 조인
+```
+$)./1-create-channel.sh
+```
