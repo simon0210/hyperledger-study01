@@ -1,6 +1,6 @@
 # FastCample HLF 1기 
 
-## Hyperledger Network 개발 환경 구성
+## Hyperledger Network Basic 개발 환경 구성
 marbles/config/connection_profile.local.json 에서 인증서 관련 경로 설정이 하기와 같이 되어 있다.
 
 ```
