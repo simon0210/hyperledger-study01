@@ -94,3 +94,6 @@ gulp.task('env_local', function () {
 	env['creds_filename'] = 'marbles_local.json';
 });
 ```
+http://localhost:3001 에서 hlf basic network 연동된 marbles 예제를 확인 할 수 있다.
+
+## Hyperledger Network Multi Orderer 개발 환경 구성
