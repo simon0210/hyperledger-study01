@@ -44,3 +44,15 @@ marbles 예제를 돌리기 위한 모듈을 설치 하였다면 Hyperledger Fab
 $)cd ~/github/hyperledger-study01/network
 $)./start.sh
 ```
+HLF 도커 컨테이너가 정상적으로 올라왔는지 확인한다.
+
+```
+$)docker ps -a
+
+CONTAINER ID        IMAGE                        COMMAND                  CREATED             STATUS              PORTS                                            NAMES
+e1a08c77b210        hyperledger/fabric-peer      "peer node start"        16 seconds ago      Up 15 seconds       0.0.0.0:7051->7051/tcp, 0.0.0.0:7053->7053/tcp   peer0.org1.example.com
+39c3a88ea19d        hyperledger/fabric-orderer   "orderer"                19 seconds ago      Up 15 seconds       0.0.0.0:7050->7050/tcp                           orderer.example.com
+23394ca430ff        hyperledger/fabric-ca        "sh -c 'fabric-ca-se…"   19 seconds ago      Up 17 seconds       0.0.0.0:7054->7054/tcp                           ca.example.com
+e3082169e0cc        hyperledger/fabric-couchdb   "tini -- /docker-ent…"   19 seconds ago      Up 17 seconds       4369/tcp, 9100/tcp, 0.0.0.0:5984->5984/tcp       couchdb
+
+```
