@@ -56,3 +56,17 @@ e1a08c77b210        hyperledger/fabric-peer      "peer node start"        16 sec
 e3082169e0cc        hyperledger/fabric-couchdb   "tini -- /docker-ent…"   19 seconds ago      Up 17 seconds       4369/tcp, 9100/tcp, 0.0.0.0:5984->5984/tcp       couchdb
 
 ```
+정상적인 작동 확인을 위하여 ORDERER 로그를 확인한다
+```
+docker logs -f orderer.example.com
+
+... 중략
+2018-09-18 00:22:29.513 UTC [orderer/common/server] Start -> INFO 006 Beginning to serve requests
+2018-09-18 00:22:40.497 UTC [msp] DeserializeIdentity -> INFO 007 Obtaining identity
+2018-09-18 00:22:40.497 UTC [msp] DeserializeIdentity -> INFO 008 Obtaining identity
+2018-09-18 00:22:40.500 UTC [msp] DeserializeIdentity -> INFO 009 Obtaining identity
+2018-09-18 00:22:40.503 UTC [fsblkstorage] newBlockfileMgr -> INFO 00a Getting block information from block storage
+2018-09-18 00:22:40.514 UTC [orderer/commmon/multichannel] newChain -> INFO 00b Created and starting new chain mychannel
+2018-09-18 00:22:40.704 UTC [msp] DeserializeIdentity -> INFO 00c Obtaining identity
+2018-09-18 00:22:46.959 UTC [msp] DeserializeIdentity -> INFO 00d Obtaining identity
+```
