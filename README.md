@@ -121,3 +121,9 @@ $)./1-create-channel.sh
 ```
 $)./2-setup-chaincode.sh
 ```
+* ~/gihub/hyperledger-study01/marbles/config/connection_profile_multi.json 에 멀티 환경이 구성되어 있다
+현재 org1 만 추가가 되어 있는데 코드를 분석하고 org2도 작동되게 바꿀 필요가 있다.
+* marbles 실행 (기존에 실행 되었던 marbles_local은 ctrl+c로 셧다운 하자)
+```
+$)gule marbles_multi
+```
