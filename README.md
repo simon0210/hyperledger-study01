@@ -116,3 +116,8 @@ $)./0-network-start.sh
 ```
 $)./1-create-channel.sh
 ```
+
+* marbles 체인코드 install & instantiate
+```
+$)./2-setup-chaincode.sh
+```
