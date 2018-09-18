@@ -25,9 +25,16 @@ marbles/config/connection_profile.local.json 에서 인증서 관련 경로 설�
 
 그러므도 git clone을 받을때 홈디렉토리에서 github 디렉토리를 만들고 clone 받기를 권장한다.
 (단, 별도 디렉토리에 받을 경우 marbles/config/connection_profile.local.json 에서 인증서 경로 설정을 바꾸어주어야 한다.)
+
 ```
 cd ~ #홈디렉토리로 이동
 mkdir github
 git clone https://github.com/simon0210/hyperledger-study01.git
+```
 
+클론받은 디렉토리로 이동후 npm install 명령으로 marbles 필요 팩키지를 설치한다. 필요 팩키지는 package.json 에 기술되어 있다.
+
+```
+cd hyperledger-study01/marbles
+npm install
 ```
