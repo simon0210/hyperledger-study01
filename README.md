@@ -1,4 +1,8 @@
 # FastCampus HLF 1기 
+## 사전 필요 사항 ##
+nodeJS v8.11.3 이상
+Docker 17.12.1-ce 이상
+HLF 1.2 Image
 
 ## Hyperledger Network Basic 개발 환경 구성
 marbles/config/connection_profile.local.json 에서 인증서 관련 경로 설정이 하기와 같이 되어 있다.
