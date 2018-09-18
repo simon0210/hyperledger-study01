@@ -101,3 +101,4 @@ gulp.task('env_local', function () {
 http://localhost:3001 에서 hlf basic network 연동된 marbles 예제를 확인 할 수 있다.
 
 ## Hyperledger Network Multi Orderer 개발 환경 구성
+marbles 예제를 HLF 멀티 네트워크(org2, ca2, peer4, orderer3, zookeeper3, kafka4) 환경과 연동해 보자.
