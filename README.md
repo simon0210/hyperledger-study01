@@ -110,4 +110,5 @@ $)docker rm -f $(docker ps -aq)
 * 멀티 네트워크 시작
 ```
 $)cd ~/github/hyperledger-study01/network/multi
+$)./0-network-start.sh
 ```
