@@ -58,7 +58,7 @@ e3082169e0cc        hyperledger/fabric-couchdb   "tini -- /docker-ent…"   19 s
 ```
 정상적인 작동 확인을 위하여 ORDERER 로그를 확인한다
 ```
-docker logs -f orderer.example.com
+$)docker logs -f orderer.example.com
 
 ... 중략
 2018-09-18 00:22:29.513 UTC [orderer/common/server] Start -> INFO 006 Beginning to serve requests
@@ -70,3 +70,10 @@ docker logs -f orderer.example.com
 2018-09-18 00:22:40.704 UTC [msp] DeserializeIdentity -> INFO 00c Obtaining identity
 2018-09-18 00:22:46.959 UTC [msp] DeserializeIdentity -> INFO 00d Obtaining identity
 ```
+이제 marbles 예제를 시작할 준비가 되었다.
+기존에 남아 있지 모를 키를 제거하고 체인코드를 설치해 보자.
+```
+$)rm -rf ~/github/hyperledger-study01/network/ca/hfc-key-store/*
+$)cd ~/github/hyperledger-study01/marbles/scripts
+$)node install_chaincode.js
+$)node instantiate_chaincode.js
