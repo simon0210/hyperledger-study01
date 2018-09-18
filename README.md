@@ -102,3 +102,12 @@ http://localhost:3001 에서 hlf basic network 연동된 marbles 예제를 확�
 
 ## Hyperledger Network Multi Orderer 개발 환경 구성
 marbles 예제를 HLF 멀티 네트워크(org2, ca2, peer4, orderer3, zookeeper3, kafka4) 환경과 연동해 보자.
+
+* 기존 basic-network 제거
+```
+$)docker rm -f $(docker ps -aq)
+```
+* 멀티 네트워크 시작
+```
+$)cd ~/github/hyperledger-study01/network/multi
+```
