@@ -77,3 +77,20 @@ $)rm -rf ~/github/hyperledger-study01/network/ca/hfc-key-store/*
 $)cd ~/github/hyperledger-study01/marbles/scripts
 $)node install_chaincode.js
 $)node instantiate_chaincode.js
+```
+자 이제 marbles 예제를 실행 시켜 보자
+
+```
+$)gulp marbles_local
+```
+
+참고로 marbles_local의 의미는 gulpfiles.js 에서 다음과 같이 확인할수 있다.
+
+```
+gulp.task('marbles_local', ['env_local', 'watch-sass', 'watch-server', 'server']);	//run with command `gulp marbles_local` for a local network
+
+// Local Fabric via Docker Compose
+gulp.task('env_local', function () {
+	env['creds_filename'] = 'marbles_local.json';
+});
+```
