@@ -5,7 +5,7 @@
 * HLF 1.2 Image
 
 ## NodeJS 설치
-https://nodejs.org/ko/download/package-manager/#macos
+https://nodejs.org/ko/download/package-manager
 
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
