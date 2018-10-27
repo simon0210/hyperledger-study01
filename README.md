@@ -4,6 +4,24 @@
 * Docker 17.12.1-ce 이상
 * HLF 1.2 Image
 
+## NodeJS 설치
+https://nodejs.org/ko/download/package-manager/#macos
+
+```
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+
+npm i npm@latest -g
+```
+
+## NVM 설치
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+source ~/.bashrc
+```
+
 ## Hyperledger Network Basic 개발 환경 구성
 marbles/config/connection_profile.local.json 에서 인증서 관련 경로 설정이 하기와 같이 되어 있다.
 
