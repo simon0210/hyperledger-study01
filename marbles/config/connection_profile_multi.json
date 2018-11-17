@@ -13,15 +13,15 @@
 	"channels": {
 		"mychannel": {
 			"orderers": [
-				"orderer0.fastcampus.com.com",
-				"orderer1.fastcampus.com.com",
-				"orderer2.fastcampus.com.com"
+				"orderer0.fastcampus.com",
+				"orderer1.fastcampus.com",
+				"orderer2.fastcampus.com"
 			],
 			"peers": {
-				"peer0.org1.fastcampus.com.com": {
+				"peer0.org1.fastcampus.com": {
 					"eventSource": true
 				},
-				"peer1.org1.fastcampus.com.com": {
+				"peer1.org1.fastcampus.com": {
 					"eventSource": true
 				}
 			},
@@ -35,25 +35,25 @@
 		"Org1MSP": {
 			"mspid": "Org1MSP",
 			"peers": [
-				"peer0.org1.fastcampus.com.com",
-				"peer1.org1.fastcampus.com.com"
+				"peer0.org1.fastcampus.com",
+				"peer1.org1.fastcampus.com"
 			],
 			"certificateAuthorities": [
-				"ca1.fastcampus.com.com"
+				"ca1.fastcampus.com"
 			],
 			"x-adminCert": {
-				"path": "/$HOME/github/hyperledger-study01/network/multi/crypto-config/peerOrganizations/org1.fastcampus.com.com/users/Admin@org1.fastcampus.com.com/msp/admincerts/Admin@org1.fastcampus.com.com-cert.pem"
+				"path": "/$HOME/github/hyperledger-study01/network/multi/crypto-config/peerOrganizations/org1.fastcampus.com/users/Admin@org1.fastcampus.com/msp/admincerts/Admin@org1.fastcampus.com-cert.pem"
 			},
 			"x-adminKeyStore": {
-				"path": "/$HOME/github/hyperledger-study01/network/multi/crypto-config/peerOrganizations/org1.fastcampus.com.com/users/Admin@org1.fastcampus.com.com/msp/keystore/"
+				"path": "/$HOME/github/hyperledger-study01/network/multi/crypto-config/peerOrganizations/org1.fastcampus.com/users/Admin@org1.fastcampus.com/msp/keystore/"
 			}
 		}
 	},
 	"orderers": {
-		"orderer0.fastcampus.com.com": {
+		"orderer0.fastcampus.com": {
 			"url": "grpcs://localhost:7050",
 			"grpcOptions": {
-				"ssl-target-name-override": "orderer0.fastcampus.com.com",
+				"ssl-target-name-override": "orderer0.fastcampus.com",
 				"grpc.http2.keepalive_time": 300,
 				"grpc.keepalive_time_ms": 300000,
 				"grpc.http2.keepalive_timeout": 35,
@@ -63,10 +63,10 @@
 				"pem": "-----BEGIN CERTIFICATE-----\r\nMIICNTCCAdugAwIBAgIQSv6JEhg15rtNMT3AsdxB9DAKBggqhkjOPQQDAjBsMQsw\r\nCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy\r\nYW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4\r\nYW1wbGUuY29tMB4XDTE4MDkxMzA4MzMzMFoXDTI4MDkxMDA4MzMzMFowbDELMAkG\r\nA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu\r\nY2lzY28xFDASBgNVBAoTC2V4YW1wbGUuY29tMRowGAYDVQQDExF0bHNjYS5leGFt\r\ncGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABFihZyEpwneXS486B3+6\r\nCMioJ+TXHwbbK7mehKWV19gTfXte1krg415W1hRiQKjN1XYuykNYW435xEKR7ye2\r\n0w+jXzBdMA4GA1UdDwEB/wQEAwIBpjAPBgNVHSUECDAGBgRVHSUAMA8GA1UdEwEB\r\n/wQFMAMBAf8wKQYDVR0OBCIEIHyF7H0bVlGRSVQneawpstE2Bq6dNWGL/scno040\r\nresdMAoGCCqGSM49BAMCA0gAMEUCIQCZifMyYIKlxjz7tmrRnhwqNQYbSZJOSn+Y\r\nDaoukNMpxgIgTUJUsVkxG+97hIa77Ma9KQ/LtJgyIQyeEe1NzCXgyYY=\r\n-----END CERTIFICATE-----\r\n"
 			}
 		},
-		"orderer1.fastcampus.com.com": {
+		"orderer1.fastcampus.com": {
 			"url": "grpcs://localhost:8050",
 			"grpcOptions": {
-				"ssl-target-name-override": "orderer1.fastcampus.com.com",
+				"ssl-target-name-override": "orderer1.fastcampus.com",
 				"grpc.http2.keepalive_time": 300,
 				"grpc.keepalive_time_ms": 300000,
 				"grpc.http2.keepalive_timeout": 35,
@@ -76,10 +76,10 @@
 				"pem": "-----BEGIN CERTIFICATE-----\r\nMIICNTCCAdugAwIBAgIQSv6JEhg15rtNMT3AsdxB9DAKBggqhkjOPQQDAjBsMQsw\r\nCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy\r\nYW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4\r\nYW1wbGUuY29tMB4XDTE4MDkxMzA4MzMzMFoXDTI4MDkxMDA4MzMzMFowbDELMAkG\r\nA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu\r\nY2lzY28xFDASBgNVBAoTC2V4YW1wbGUuY29tMRowGAYDVQQDExF0bHNjYS5leGFt\r\ncGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABFihZyEpwneXS486B3+6\r\nCMioJ+TXHwbbK7mehKWV19gTfXte1krg415W1hRiQKjN1XYuykNYW435xEKR7ye2\r\n0w+jXzBdMA4GA1UdDwEB/wQEAwIBpjAPBgNVHSUECDAGBgRVHSUAMA8GA1UdEwEB\r\n/wQFMAMBAf8wKQYDVR0OBCIEIHyF7H0bVlGRSVQneawpstE2Bq6dNWGL/scno040\r\nresdMAoGCCqGSM49BAMCA0gAMEUCIQCZifMyYIKlxjz7tmrRnhwqNQYbSZJOSn+Y\r\nDaoukNMpxgIgTUJUsVkxG+97hIa77Ma9KQ/LtJgyIQyeEe1NzCXgyYY=\r\n-----END CERTIFICATE-----\r\n"
 			}
 		},
-		"orderer2.fastcampus.com.com": {
+		"orderer2.fastcampus.com": {
 			"url": "grpcs://localhost:9050",
 			"grpcOptions": {
-				"ssl-target-name-override": "orderer2.fastcampus.com.com",
+				"ssl-target-name-override": "orderer2.fastcampus.com",
 				"grpc.http2.keepalive_time": 300,
 				"grpc.keepalive_time_ms": 300000,
 				"grpc.http2.keepalive_timeout": 35,
@@ -91,11 +91,11 @@
 		}
 	},
 	"peers": {
-		"peer0.org1.fastcampus.com.com": {
+		"peer0.org1.fastcampus.com": {
 			"url": "grpcs://localhost:7051",
 			"eventUrl": "grpcs://localhost:7053",
 			"grpcOptions": {
-				"ssl-target-name-override": "peer0.org1.fastcampus.com.com",
+				"ssl-target-name-override": "peer0.org1.fastcampus.com",
 				"grpc.http2.keepalive_time": 300,
 				"grpc.keepalive_time_ms": 300000,
 				"grpc.http2.keepalive_timeout": 35,
@@ -105,11 +105,11 @@
 				"pem": "-----BEGIN CERTIFICATE-----\r\nMIICSDCCAe+gAwIBAgIQa82UOFS34qXGevZPHEVA9TAKBggqhkjOPQQDAjB2MQsw\r\nCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy\r\nYW5jaXNjbzEZMBcGA1UEChMQb3JnMS5leGFtcGxlLmNvbTEfMB0GA1UEAxMWdGxz\r\nY2Eub3JnMS5leGFtcGxlLmNvbTAeFw0xODA5MTMwODMzMzBaFw0yODA5MTAwODMz\r\nMzBaMHYxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQH\r\nEw1TYW4gRnJhbmNpc2NvMRkwFwYDVQQKExBvcmcxLmV4YW1wbGUuY29tMR8wHQYD\r\nVQQDExZ0bHNjYS5vcmcxLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0D\r\nAQcDQgAEYFbrxrliAorRK4hi1LiJaZ+OdJBYDHBJGv4Q6Rtxiw1nsd85mFkBAUBI\r\ncLs2dFlCM65fIWYDxsy/GL2InwURSaNfMF0wDgYDVR0PAQH/BAQDAgGmMA8GA1Ud\r\nJQQIMAYGBFUdJQAwDwYDVR0TAQH/BAUwAwEB/zApBgNVHQ4EIgQgKSY/1zAXj4T5\r\nb68qnZcZpm2VGnfenKfNC/wspZ44fZ8wCgYIKoZIzj0EAwIDRwAwRAIgSIT/L702\r\nasAJS2Cn2CujfZYgrcNBDrx44z7aBj5nia0CIFfYjW4R+rd8cb3Ev1drgtpidwqJ\r\n/y3M8ORLQyDGchaX\r\n-----END CERTIFICATE-----\r\n"
 			}
 		},
-		"peer1.org1.fastcampus.com.com": {
+		"peer1.org1.fastcampus.com": {
 			"url": "grpcs://localhost:8051",
 			"eventUrl": "grpcs://localhost:8053",
 			"grpcOptions": {
-				"ssl-target-name-override": "peer1.org1.fastcampus.com.com",
+				"ssl-target-name-override": "peer1.org1.fastcampus.com",
 				"grpc.http2.keepalive_time": 300,
 				"grpc.keepalive_time_ms": 300000,
 				"grpc.http2.keepalive_timeout": 35,
@@ -121,7 +121,7 @@
 		}
 	},
 	"certificateAuthorities": {
-		"ca1.fastcampus.com.com": {
+		"ca1.fastcampus.com": {
 			"url": "https://localhost:7054",
 			"httpOptions": {
 				"verify": true
